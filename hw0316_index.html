@@ -1,0 +1,33 @@
+<!-- 
+三個角色：
+	1.老師、2.校長、3.學生
+條件：
+	1.校長可以看到老師網頁，不可以看到學生網頁。
+	2.老師可以看到學生網頁，不可以看到校長網頁。
+	3.學生只能看到學生網頁。
+	=>
+		學生頁面：老師和學生可看
+		老師頁面：校長和老師可看
+		校長頁面：校長可看
+目標：
+	透過session達成以上功能。
+	請設計一登入畫面，預設三種角色之密碼。 
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>0316 Homework Login System</title>
+	</head>
+	<body>
+		<form method="post" action="./hw0316_check.php">
+			ID：&nbsp<input type="text" name="id" required><br><br>
+			PWD：&nbsp<input type="password" name="pwd" required><br><br>
+
+			<input type="submit" value="Submit">
+			<input type="reset" value="reset">
+	</body>
+</html>
